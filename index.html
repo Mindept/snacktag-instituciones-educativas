@@ -2,168 +2,278 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Aviso de Privacidad para Instituciones Educativas con Plan Institucional SnackTag</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviso de Privacidad Instituciones - SnackTag</title>
     <style>
+        :root {
+            --primary-color: #333;
+            --secondary-color: #555;
+            --accent-color: #0056b3;
+            --bg-color: #f9f9f9;
+            --container-bg: #ffffff;
+            --highlight-bg: #fff3cd;
+            --highlight-border: #ffeeba;
+            --highlight-text: #856404;
+        }
+
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
+            color: var(--primary-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
             max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            color: #333;
+            margin: 40px auto;
+            background: var(--container-bg);
+            padding: 50px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+            border-radius: 8px;
         }
-        h1, h2, h3, h4 {
-            color: #0E3954;
-        }
+
         h1 {
-            border-bottom: 2px solid #0E3954;
-            padding-bottom: 10px;
+            text-align: center;
+            color: #000;
+            margin-bottom: 5px;
+            font-size: 26px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
-        h2 {
-            margin-top: 30px;
-            border-left: 4px solid #0E3954;
-            padding-left: 10px;
-        }
+
         .last-modified {
+            text-align: center;
+            color: var(--secondary-color);
+            font-size: 0.95em;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 25px;
             font-style: italic;
-            color: #E5E5E5;
-            background-color: #555;
-            padding: 5px 10px;
-            display: inline-block;
-            margin-bottom: 20px;
         }
-        ul, ol {
-            padding-left: 25px;
+
+        h2 {
+            color: #2c3e50;
+            font-size: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 8px;
+            margin-top: 45px;
+            text-transform: uppercase;
         }
+
+        h3 {
+            color: #34495e;
+            font-size: 17px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        h4 {
+            font-size: 16px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: #555;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+
+        strong {
+            font-weight: 700;
+            color: #000;
+        }
+
         a {
-            color: #0E3954;
+            color: var(--accent-color);
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 500;
+            word-break: break-all;
         }
+
         a:hover {
             text-decoration: underline;
         }
-        .highlight {
-            background-color: #E5E5E5;
-            padding: 2px 5px;
-            font-style: italic;
+
+        .email-link {
+            font-weight: bold;
+            color: var(--accent-color);
         }
-        .section {
-            margin-bottom: 30px;
+        
+        .link-box {
+            background-color: #f0f7ff;
+            border: 1px solid #cce5ff;
+            color: #004085;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 600px) {
+            .container {
+                margin: 0;
+                padding: 25px;
+                border-radius: 0;
+                box-shadow: none;
+            }
+            h1 {
+                font-size: 22px;
+            }
+            h2 {
+                font-size: 18px;
+            }
+        }
+        
+        @media print {
+            body { background: white; }
+            .container { box-shadow: none; margin: 0; padding: 0; max-width: 100%; }
         }
     </style>
 </head>
 <body>
-    <h1>AVISO DE PRIVACIDAD PARA INSTITUCIONES EDUCATIVAS CON PLAN INSTITUCIONAL SNACKTAG</h1>
-    <p class="last-modified">Última modificación: 10/junio/2025</p>
 
-    <div class="section">
-        <h2>1. IDENTIDAD DEL RESPONSABLE</h2>
-        <p>El responsable del tratamiento de los datos personales es Álvaro Roqueñi Rello, titular de la Plataforma tecnológica SnackTag, con domicilio en Sierra de la Canela #205 Int. 103, Bosques del Prado Norte, C.P. 20127, Aguascalientes, Ags., México.</p>
-        <p>Este Aviso se emite conforme a lo dispuesto por la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP) y aplica exclusivamente a Instituciones Educativas que han celebrado un convenio formal de colaboración con SnackTag bajo el Plan Institucional.</p>
-        <p class="highlight">SnackTag actúa como responsable del tratamiento de datos personales en términos de la LFPDPPP. Sin embargo, en el marco del Plan Institucional, la Institución Educativa asume un papel activo y corresponsable en la gestión de cuentas, supervisión del uso y emisión de directrices internas sobre los Servicios.</p>
-        <p>Esta relación implica que la Institución Educativa puede llegar a tener el carácter de responsable, corresponsable o encargado, según sea el flujo y destino de los datos en el marco del uso de la Plataforma.</p>
+    <div class="container">
+        <h1>AVISO DE PRIVACIDAD PARA INSTITUCIONES EDUCATIVAS CON PLAN INSTITUCIONAL SNACKTAG</h1>
+        <p class="last-modified">Última modificación: 10/junio/2025</p>
+
+        <!-- 1. IDENTIDAD DEL RESPONSABLE -->
+        <section>
+            <h2>1. IDENTIDAD DEL RESPONSABLE</h2>
+            <p>El responsable del tratamiento de los datos personales es Álvaro Roqueñi Rello, titular de la Plataforma tecnológica <strong>SnackTag</strong>, con domicilio en Sierra de la Canela #205 Int. 103, Bosques del Prado Norte, C.P. 20127, Aguascalientes, Ags., México.</p>
+            <p>Este Aviso se emite conforme a lo dispuesto por la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP) y aplica exclusivamente a Instituciones Educativas que han celebrado un convenio formal de colaboración con SnackTag bajo el Plan Institucional.</p>
+            <p>SnackTag actúa como responsable del tratamiento de datos personales en términos de la LFPDPPP. Sin embargo, en el marco del Plan Institucional, la Institución Educativa asume un papel activo y corresponsable en la gestión de cuentas, supervisión del uso y emisión de directrices internas sobre los Servicios.</p>
+            <p>Esta relación implica que la Institución Educativa puede llegar a tener el carácter de responsable, corresponsable o encargado, según sea el flujo y destino de los datos en el marco del uso de la Plataforma.</p>
+        </section>
+
+        <!-- 2. DATOS PERSONALES QUE SE RECABAN -->
+        <section>
+            <h2>2. DATOS PERSONALES QUE SE RECABAN</h2>
+            <p>SnackTag podrá recabar y tratar datos de representantes y personal de la Institución Educativa, incluyendo:</p>
+            <ul>
+                <li><strong>Datos de identificación y contacto:</strong> nombre, cargo, teléfono institucional, correo electrónico.</li>
+                <li><strong>Datos administrativos:</strong> nombre de la institución, domicilio, niveles educativos, horarios operativos.</li>
+                <li><strong>Datos contractuales:</strong> convenios, cartas de aceptación, documentos institucionales firmados.</li>
+                <li><strong>Datos de soporte:</strong> reportes de uso, estadísticas de consumo, incidencias técnicas o logísticas.</li>
+                <li>En algunos casos, acceso a datos estadísticos agregados de los Usuarios relacionados con la operación institucional.</li>
+            </ul>
+        </section>
+
+        <!-- 3. FINALIDADES DEL TRATAMIENTO -->
+        <section>
+            <h2>3. FINALIDADES DEL TRATAMIENTO</h2>
+            <h3>Finalidades primarias:</h3>
+            <ul>
+                <li>Formalizar la relación operativa y administrativa entre SnackTag y la Institución Educativa.</li>
+                <li>Coordinar el uso de la Plataforma por parte de los Usuarios Padres de Familia y Usuarios Hijos.</li>
+                <li>Establecer horarios, condiciones y políticas internas sobre el uso del servicio.</li>
+                <li>Obtener reportes operativos, analíticos y estadísticos para la administración interna de la Cafetería.</li>
+                <li>Supervisar, desde el rol institucional, la operación del servicio prestado por la Cafetería.</li>
+                <li>Comunicar avisos relevantes a los Usuarios en nombre de la Institución.</li>
+            </ul>
+
+            <h3>Finalidades secundarias (revocables):</h3>
+            <ul>
+                <li>Compartir casos de éxito o testimonios institucionales (con autorización expresa).</li>
+                <li>Participar en mejoras piloto o programas de retroalimentación.</li>
+            </ul>
+        </section>
+
+        <!-- 4. TRANSFERENCIA DE DATOS -->
+        <section>
+            <h2>4. TRANSFERENCIA DE DATOS</h2>
+            <p>SnackTag podrá transferir datos personales de los representantes de la Institución Educativa:</p>
+            <ul>
+                <li>A personal de soporte, desarrollo o coordinación operativa que forme parte del equipo SnackTag.</li>
+                <li>A Cafeterías afiliadas, en el marco de la relación operativa validada por la Institución Educativa.</li>
+                <li>A proveedores tecnológicos (como Google Firebase o Stripe), en su carácter de encargados de servicios tecnológicos, conforme a sus propias políticas de privacidad.</li>
+            </ul>
+            <p>No se realizarán transferencias con fines comerciales.</p>
+        </section>
+
+        <!-- 5. PROCEDIMIENTO PARA EL EJERCICIO DE LOS DERECHOS ARCO -->
+        <section>
+            <h2>5. PROCEDIMIENTO PARA EL EJERCICIO DE LOS DERECHOS ARCO</h2>
+            <p>Los representantes legales o personal autorizado por la Institución Educativa podrán ejercer sus derechos de Acceso, Rectificación, Cancelación u Oposición (ARCO) respecto de sus propios datos personales conforme a lo establecido por la LFPDPPP.</p>
+            <p>Este procedimiento se apega al modelo señalado en el punto 5.2 de la Política General de Privacidad de SnackTag, aplicable a contextos donde se ha formalizado un Plan Institucional con convenios específicos.</p>
+
+            <h3>A. ENVÍO DE SOLICITUD</h3>
+            <p>La solicitud deberá dirigirse al correo <a href="mailto:dsnacktag@gmail.com" class="email-link">dsnacktag@gmail.com</a>, incluyendo:</p>
+            <ul>
+                <li>Nombre del solicitante y nombre de la Institución.</li>
+                <li>Medio para recibir notificaciones.</li>
+                <li>Descripción clara del derecho ARCO que desea ejercer.</li>
+                <li>Documentos que acrediten la representación legal de la Institución o el vínculo institucional.</li>
+            </ul>
+
+            <h3>B. IDENTIFICACIÓN</h3>
+            <p>Adjuntar copia de identificación oficial vigente. En su caso, incluir carta institucional o poder legal firmado por el representante autorizado.</p>
+
+            <h3>C. TRÁMITE INTERNO ALTERNATIVO</h3>
+            <p>La Institución podrá, si lo desea, canalizar las solicitudes ARCO de su comunidad escolar (usuarios menores o sus tutores) a través de los canales institucionales designados, en coordinación con SnackTag. En dichos casos, SnackTag actuará como encargado de tratamiento y dará seguimiento conforme al Protocolo de Implementación firmado.</p>
+
+            <h3>D. TIEMPOS DE RESPUESTA</h3>
+            <p>SnackTag dará respuesta en un plazo máximo de 20 días hábiles, y en caso de resultar procedente, ejecutará la solicitud dentro de los 15 días hábiles siguientes.</p>
+
+            <h3>D. NEGATIVA O LIMITACIÓN DEL ACCESO</h3>
+            <p>En caso de que la solicitud sea improcedente conforme a lo establecido en la legislación aplicable, se notificará al solicitante con una justificación legal.</p>
+
+            <h3>5.1 SOBRE EL PROCEDIMIENTO ESPECIAL BAJO EL PLAN INSTITUCIONAL</h3>
+            <p>Las solicitudes ARCO recibidas por la Institución como parte del Plan Institucional se coordinarán con SnackTag para su atención. En estos casos:</p>
+            <ul>
+                <li>La Institución Educativa deberá notificar a SnackTag dentro de los siguientes 5 días hábiles.</li>
+                <li>Ambas partes establecerán el canal adecuado para procesar la solicitud.</li>
+                <li>En caso de divergencia sobre la competencia o sobre el alcance del tratamiento, prevalecerá la interpretación conjunta conforme a la Política General de Privacidad y los Términos y Condiciones de la Plataforma.</li>
+            </ul>
+        </section>
+
+        <!-- 6. DATOS PERSONALES DE LA COMUNIDAD ESCOLAR -->
+        <section>
+            <h2>6. DATOS PERSONALES DE LA COMUNIDAD ESCOLAR</h2>
+            <p>La Institución Educativa reconoce que puede tener acceso a información generada por los Usuarios dentro de la Plataforma (padres, madres, alumnos) únicamente para fines de gestión institucional y bajo los principios de confidencialidad, licitud y seguridad.</p>
+            <p>Se compromete a:</p>
+            <ul>
+                <li>No extraer, reproducir o reutilizar datos sin consentimiento.</li>
+                <li>No generar bases de datos independientes sin la participación de SnackTag.</li>
+                <li>Respetar la Política General de Privacidad y la Política de Uso de los Servicios por Menores de Edad.</li>
+                <li>Implementar mecanismos internos de seguridad para prevenir accesos indebidos.</li>
+            </ul>
+            <p>En el marco de la relación contractual y operativa, la Institución Educativa actúa como responsable del tratamiento de los datos personales de su comunidad escolar, en tanto que SnackTag actúa como encargado de tratamiento, conforme a lo previsto por los artículos 50 y 51 del Reglamento de la LFPDPPP.</p>
+            <p>Ambos se comprometen a establecer medidas técnicas, administrativas y contractuales adecuadas para garantizar la confidencialidad, seguridad y legalidad del uso de los datos personales de los Usuarios, en especial aquellos que correspondan a niñas, niños o adolescentes.</p>
+        </section>
+
+        <!-- 7. COOKIES Y TECNOLOGÍAS -->
+        <section>
+            <h2>7. COOKIES Y TECNOLOGÍAS</h2>
+            <p>El uso institucional de la Plataforma puede generar registros de actividad, análisis de desempeño y autenticación mediante cookies y otras tecnologías. Consultar la Política de Cookies para más detalles.</p>
+            
+            <div class="link-box">
+                <a href="https://mindept.github.io/terminos-uso-tecnologia/" target="_blank">https://mindept.github.io/terminos-uso-tecnologia/</a>
+            </div>
+        </section>
+
+        <!-- 8. CAMBIOS AL AVISO -->
+        <section>
+            <h2>8. CAMBIOS AL AVISO</h2>
+            <p>SnackTag podrá modificar este Aviso para adaptarlo a reformas legales o cambios en los mecanismos de operación del Plan Institucional. Cualquier cambio será notificado por los canales de contacto registrados.</p>
+        </section>
     </div>
 
-    <div class="section">
-        <h2>2. DATOS PERSONALES QUE SE RECABAN</h2>
-        <p>SnackTag podrá recabar y tratar datos de representantes y personal de la Institución Educativa, incluyendo:</p>
-        <ul>
-            <li><strong>Datos de identificación y contacto:</strong> nombre, cargo, teléfono institucional, correo electrónico.</li>
-            <li><strong>Datos administrativos:</strong> nombre de la institución, domicilio, niveles educativos, horarios operativos.</li>
-            <li><strong>Datos contractuales:</strong> convenios, cartas de aceptación, documentos institucionales firmados.</li>
-            <li><strong>Datos de soporte:</strong> reportes de uso, estadísticas de consumo, incidencias técnicas o logísticas.</li>
-            <li><strong>En algunos casos:</strong> acceso a datos estadísticos agregados de los Usuarios relacionados con la operación institucional.</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>3. FINALIDADES DEL TRATAMIENTO</h2>
-        <h3>Finalidades primarias:</h3>
-        <ul>
-            <li>Formalizar la relación operativa y administrativa entre SnackTag y la Institución Educativa.</li>
-            <li>Coordinar el uso de la Plataforma por parte de los Usuarios Padres de Familia y Usuarios Hijos.</li>
-            <li>Establecer horarios, condiciones y políticas internas sobre el uso del servicio.</li>
-            <li>Obtener reportes operativos, analíticos y estadísticos para la administración interna de la Cafetería.</li>
-            <li>Supervisar, desde el rol institucional, la operación del servicio prestado por la Cafetería.</li>
-            <li>Comunicar avisos relevantes a los Usuarios en nombre de la Institución.</li>
-        </ul>
-
-        <h3>Finalidades secundarias (revocables):</h3>
-        <ul>
-            <li>Compartir casos de éxito o testimonios institucionales (con autorización expresa).</li>
-            <li>Participar en mejoras piloto o programas de retroalimentación.</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>4. TRANSFERENCIA DE DATOS</h2>
-        <p>SnackTag podrá transferir datos personales de los representantes de la Institución Educativa:</p>
-        <ul>
-            <li>A personal de soporte, desarrollo o coordinación operativa que forme parte del equipo SnackTag.</li>
-            <li>A Cafeterías afiliadas, en el marco de la relación operativa validada por la Institución Educativa.</li>
-            <li>A proveedores tecnológicos (como Google Firebase o Stripe), en su carácter de encargados de servicios tecnológicos, conforme a sus propias políticas de privacidad.</li>
-        </ul>
-        <p class="highlight">No se realizarán transferencias con fines comerciales.</p>
-    </div>
-
-    <div class="section">
-        <h2>5. PROCEDIMIENTO PARA EL EJERCICIO DE LOS DERECHOS ARCO</h2>
-        <p>Los representantes legales o personal autorizado por la Institución Educativa podrán ejercer sus derechos de Acceso, Rectificación, Cancelación u Oposición (ARCO) respecto de sus propios datos personales conforme a lo establecido por la LFPDPPP.</p>
-        <p>Este procedimiento se apega al modelo señalado en el punto 5.2 de la <a href="#">Política General de Privacidad de SnackTag</a>, aplicable a contextos donde se ha formalizado un Plan Institucional con convenios específicos.</p>
-
-        <h3>A. ENVÍO DE SOLICITUD</h3>
-        <p>La solicitud deberá dirigirse al correo <a href="mailto:dsnacktag@gmail.com">dsnacktag@gmail.com</a>, incluyendo:</p>
-        <ul>
-            <li>Nombre del solicitante y nombre de la Institución.</li>
-            <li>Medio para recibir notificaciones.</li>
-            <li>Descripción clara del derecho ARCO que desea ejercer.</li>
-            <li>Documentos que acrediten la representación legal de la Institución o el vínculo institucional.</li>
-        </ul>
-
-        <h3>B. IDENTIFICACIÓN</h3>
-        <p>Adjuntar copia de identificación oficial vigente. En su caso, incluir carta institucional o poder legal firmado por el representante autorizado.</p>
-
-        <h3>C. TRÁMITE INTERNO ALTERNATIVO</h3>
-        <p class="highlight">La Institución podrá, si lo desea, canalizar las solicitudes ARCO de su comunidad escolar (usuarios menores o sus tutores) a través de los canales institucionales designados, en coordinación con SnackTag. En dichos casos, SnackTag actuará como encargado de tratamiento y dará seguimiento conforme al Protocolo de Implementación firmado.</p>
-
-        <h3>D. TIEMPOS DE RESPUESTA</h3>
-        <p>SnackTag dará respuesta en un plazo máximo de 20 días hábiles, y en caso de resultar procedente, ejecutará la solicitud dentro de los 15 días hábiles siguientes.</p>
-
-        <h3>E. NEGATIVA O LIMITACIÓN DEL ACCESO</h3>
-        <p>En caso de que la solicitud sea improcedente conforme a lo establecido en la legislación aplicable, se notificará al solicitante con una justificación legal.</p>
-
-        <h3>5.1 SOBRE EL PROCEDIMIENTO ESPECIAL BAJO EL PLAN INSTITUCIONAL</h3>
-        <p>Las solicitudes ARCO recibidas por la Institución como parte del Plan Institucional se coordinarán con SnackTag para su atención. En estos casos:</p>
-        <ul>
-            <li>La Institución Educativa deberá notificar a SnackTag dentro de los siguientes 5 días hábiles.</li>
-            <li>Ambas partes establecerán el canal adecuado para procesar la solicitud.</li>
-            <li class="highlight">En caso de divergencia sobre la competencia o sobre el alcance del tratamiento, prevalecerá la interpretación conjunta conforme a la Política General de Privacidad y los Términos y Condiciones de la Plataforma.</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>6. DATOS PERSONALES DE LA COMUNIDAD ESCOLAR</h2>
-        <p>La Institución Educativa reconoce que puede tener acceso a información generada por los Usuarios dentro de la Plataforma (padres, madres, alumnos) únicamente para fines de gestión institucional y bajo los principios de confidencialidad, licitud y seguridad.</p>
-        <p>Se compromete a:</p>
-        <ul>
-            <li>No extraer, reproducir o reutilizar datos sin consentimiento.</li>
-            <li>No generar bases de datos independientes sin la participación de SnackTag.</li>
-            <li>Respetar la Política General de Privacidad y la Política de Uso de los Servicios por Menores de Edad.</li>
-            <li>Implementar mecanismos internos de seguridad para prevenir accesos indebidos.</li>
-        </ul>
-        <p class="highlight">En el marco de la relación contractual y operativa, la Institución Educativa actúa como responsable del tratamiento de los datos personales de su comunidad escolar, en tanto que SnackTag actúa como encargado de tratamiento, conforme a lo previsto por los artículos 50 y 51 del Reglamento de la LFPDPPP.</p>
-        <p>Ambos se comprometen a establecer medidas técnicas, administrativas y contractuales adecuadas para garantizar la confidencialidad, seguridad y legalidad del uso de los datos personales de los Usuarios, en especial aquellos que correspondan a niñas, niños o adolescentes.</p>
-    </div>
-
-    <div class="section">
-        <h2>7. COOKIES Y TECNOLOGÍAS</h2>
-        <p>El uso institucional de la Plataforma puede generar registros de actividad, análisis de desempeño y autenticación mediante cookies y otras tecnologías. Consultar la <a href="#">Política de Cookies</a> para más detalles.</p>
-    </div>
-
-    <div class="section">
-        <h2>8. CAMBIOS AL AVISO</h2>
-        <p>SnackTag podrá modificar este Aviso para adaptarlo a reformas legales o cambios en los mecanismos de operación del Plan Institucional. Cualquier cambio será notificado por los canales de contacto registrados.</p>
-    </div>
 </body>
 </html>
